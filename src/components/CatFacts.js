@@ -1,11 +1,11 @@
 import React from "react";
-import data from "../data/data.json";
 
-const CatFacts = () => {
+const CatFacts = ({ catFacts }) => {
+  console.log(catFacts)
   return (
-    <div>
-      {data.map((catfact) => (
-        <p data-testid="catFact" key={catfact._id}>
+    <div className="catfacts">
+      {catFacts && catFacts.map((catfact) => (
+        <p key={catfact._id}>
           {catfact.text}
         </p>
       ))}

@@ -1,18 +1,15 @@
-import { React } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div>
-      <ul>
+      <ul className="navabar-ul">
         <li>
           <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="/catfacts">CatFacts</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </div>

@@ -12,20 +12,18 @@ code {
     monospace;
 }
 
-/* Home page css */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 /* for body text */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 /* for neon font */
 @import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
 
-.home {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: whitesmoke;
+#root {
   background-image: radial-gradient(
     circle at center,
     #460b60,
@@ -33,6 +31,20 @@ code {
     #15032a,
     #0f0021
   );
+  color: whitesmoke;
+}
+
+.catfacts {
+  margin: 1rem 2rem;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: whitesmoke;
+  margin-top: 200px;
 }
 
 /* code for neon font */
@@ -74,4 +86,23 @@ code {
     color: #ff3366;
     -webkit-text-stroke: 0.1px #ff69b4;
   }
+}
+
+.navabar-ul {
+  margin: 0;
+  color: whitesmoke;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+}
+
+.navabar-ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.navabar-ul li a:hover {
+  color: #e01c1c;
 }
